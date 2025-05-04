@@ -8,6 +8,7 @@ build-mode = "both"
 [X]
 apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter"
 build-mode = "both"
+version = "10.48.0"
 
 [YouTube]
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
