@@ -325,6 +325,7 @@ dl_apkmirror() {
      		else 
        			url=https://www.apkmirror.com$uurl; 
 	  	fi
+    		echo "Download URL: ${url}"
 		resp=$(req "$url" -) || return 1
 		node=$($HTMLQ "div.table-row.headerFont:nth-last-child(1)" -r "span:nth-child(n+3)" <<<"$resp")
 		if [ "$node" ]; then
