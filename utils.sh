@@ -319,7 +319,7 @@ dl_apkmirror() {
 		if [ -z "$uurl" ]; then 
   			pkg_name="${url##*/}"
      			if [ $pkg_name = "twitter" ]; then
-				$pkg_name="x-previously-twitter"
+				pkg_name="x-previously-twitter"
 			fi
   			url="${url}/${pkg_name}-${version//./-}-release/";
      		else 
