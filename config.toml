@@ -6,10 +6,9 @@ apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit/"
 build-mode = "both"
 
 [X]
-apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter/"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter"
 build-mode = "both"
 
 [YouTube]
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
 build-mode = "both"
-excluded-patches = "'Enable debugging' 'GmsCore support'"
