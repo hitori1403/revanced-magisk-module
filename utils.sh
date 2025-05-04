@@ -316,7 +316,15 @@ dl_apkmirror() {
 		local resp node app_table uurl dlurl=""
 		uurl=$(grep -F "downloadLink" <<<"$__APKMIRROR_RESP__" | grep -F "${version//./-}-release/" | head -1 |
 			sed -n 's;.*href="\(.*-release\).*;\1;p')
-		if [ -z "$uurl" ]; then url="${url}/${url##*/}-${version//./-}-release/"; else url=https://www.apkmirror.com$uurl; fi
+		if [ -z "$uurl" ]; then 
+  			pkg_name="${url##*/}"
+     			if [ $pkg_name = "twitter" ]; then
+				$pkg_name = "x-previously-twitter"
+			fi
+  			url="${url}/${pkg_name}-${version//./-}-release/";
+     		else 
+       			url=https://www.apkmirror.com$uurl; 
+	  	fi
 		resp=$(req "$url" -) || return 1
 		node=$($HTMLQ "div.table-row.headerFont:nth-last-child(1)" -r "span:nth-child(n+3)" <<<"$resp")
 		if [ "$node" ]; then
