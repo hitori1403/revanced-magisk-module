@@ -1,6 +1,6 @@
 {
-  "version": "v10.48.0-release.0 (patches: 5.25.0)",
-  "versionCode": 6,
-  "zipUrl": "https://github.com/hitori1403/revanced-magisk-module/releases/download/6/x-revanced-magisk-v10.48.0-release.0-all.zip",
+  "version": "v10.48.0-release.0 (patches: 5.26.0)",
+  "versionCode": 7,
+  "zipUrl": "https://github.com/hitori1403/revanced-magisk-module/releases/download/7/x-revanced-magisk-v10.48.0-release.0-all.zip",
   "changelog": "https://raw.githubusercontent.com/hitori1403/revanced-magisk-module/update/build.md"
 }
